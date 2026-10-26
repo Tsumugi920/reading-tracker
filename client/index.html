@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>读书追踪 · Reading Tracker</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>📚 读书追踪</h1>
+    <p class="subtitle">记录每一本书、每一段阅读旅程</p>
+  </header>
+
+  <nav class="tabs" id="main-tabs">
+    <button class="tab active" data-tab="books">📖 书架</button>
+    <button class="tab" data-tab="notes">✍️ 读书笔记</button>
+    <button class="tab" data-tab="goals">🎯 阅读目标</button>
+    <button class="tab" data-tab="stats">📊 统计</button>
+  </nav>
+
+  <main>
+    <!-- 书架 -->
+    <section id="tab-books" class="tab-panel active">
+      <div class="toolbar">
+        <div class="filters" id="book-filters">
+          <button class="filter active" data-filter="all">全部</button>
+          <button class="filter" data-filter="reading">在读</button>
+          <button class="filter" data-filter="finished">已读</button>
+          <button class="filter" data-filter="wishlist">想读</button>
+        </div>
+        <input type="search" id="book-search" placeholder="搜索书名或作者…">
+        <button id="toggle-book-form" class="btn btn-primary">＋ 添加书籍</button>
+      </div>
+
+      <form id="book-form" class="card form-card hidden">
+        <div class="form-grid">
+          <label class="field">书名 *
+            <input name="title" required placeholder="例如：三体">
+          </label>
+          <label class="field">作者
+            <input name="author" placeholder="例如：刘慈欣">
+          </label>
+          <label class="field">总页数
+            <input name="totalPages" type="number" min="1" placeholder="例如：302">
+          </label>
+          <label class="field">状态
+            <select name="category">
+              <option value="wishlist">想读</option>
+              <option value="reading">在读</option>
+              <option value="finished">已读</option>
+            </select>
+          </label>
+          <label class="field">封面表情
+            <input name="cover" placeholder="例如：🚀（留空则用 📚）">
+          </label>
+        </div>
+        <label class="field">简介
+          <textarea name="description" placeholder="一句话介绍这本书（可选）"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">保存到书架</button>
+          <button type="button" class="btn" id="cancel-book-form">取消</button>
+        </div>
+      </form>
+
+      <div id="book-list" class="book-grid"></div>
+    </section>
+
+    <!-- 读书笔记 -->
+    <section id="tab-notes" class="tab-panel">
+      <div class="notes-layout">
+        <form id="note-form" class="card form-card">
+          <h2>✍️ 写笔记</h2>
+          <label class="field">选择书籍
+            <select id="note-book" required></select>
+          </label>
+          <label class="field">页码（可选）
+            <input id="note-page" type="number" min="0" placeholder="例如：105">
+          </label>
+          <label class="field">笔记内容
+            <textarea id="note-content" required placeholder="摘录、感想、书评……"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">保存笔记</button>
+        </form>
+        <div>
+          <div class="toolbar">
+            <select id="note-filter"></select>
+            <span id="notes-count" class="muted"></span>
+          </div>
+          <div id="notes-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 阅读目标 -->
+    <section id="tab-goals" class="tab-panel">
+      <div class="card form-card goal-card">
+        <h2>🎯 年度阅读目标</h2>
+        <p class="muted">设定今年想读完的书籍数量，追踪自己的完成进度。</p>
+        <form id="goal-form" class="goal-form">
+          <label>今年读完 <input id="goal-input" type="number" min="0" max="1000" required> 本书</label>
+          <button type="submit" class="btn btn-primary">保存目标</button>
+        </form>
+        <div id="goal-progress"></div>
+      </div>
+    </section>
+
+    <!-- 统计 -->
+    <section id="tab-stats" class="tab-panel">
+      <div id="stats-cards" class="stats-grid"></div>
+      <div class="stats-panels">
+        <div class="card"><h2>📚 分类分布</h2><div id="stats-categories"></div></div>
+        <div class="card"><h2>🏆 今年读完</h2><div id="stats-finished"></div></div>
+        <div class="card"><h2>🎯 年度目标</h2><div id="stats-goal"></div></div>
+        <div class="card"><h2>🧵 最近笔记</h2><div id="stats-notes"></div></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 编辑书籍弹窗 -->
+  <div id="book-modal" class="modal-overlay hidden">
+    <div class="modal">
+      <h2>✏️ 编辑书籍</h2>
+      <form id="edit-book-form">
+        <label class="field">书名 *<input name="title" required></label>
+        <div class="form-grid">
+          <label class="field">作者<input name="author"></label>
+          <label class="field">总页数<input name="totalPages" type="number" min="1"></label>
+          <label class="field">状态
+            <select name="category">
+              <option value="reading">在读</option>
+              <option value="finished">已读</option>
+              <option value="wishlist">想读</option>
+            </select>
+          </label>
+          <label class="field">封面表情<input name="cover"></label>
+        </div>
+        <label class="field">简介<textarea name="description"></textarea></label>
+        <div class="modal-actions">
+          <button type="button" class="btn" data-close>取消</button>
+          <button type="submit" class="btn btn-primary">保存</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
