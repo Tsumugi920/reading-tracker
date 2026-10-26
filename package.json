@@ -1,0 +1,17 @@
+{
+  "name": "reading-tracker",
+  "version": "1.0.0",
+  "description": "读书追踪：书籍管理、阅读进度、读书笔记、阅读目标与统计的全栈应用",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "license": "MIT"
+}
