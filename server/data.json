@@ -1,0 +1,226 @@
+{
+  "goal": {
+    "yearlyTarget": 12,
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  },
+  "books": [
+    {
+      "id": 1,
+      "title": "三体",
+      "author": "刘慈欣",
+      "category": "finished",
+      "totalPages": 302,
+      "currentPage": 302,
+      "cover": "🚀",
+      "description": "地球文明向宇宙发出的第一声啼鸣，拉开了两个文明生死纠缠的序幕。",
+      "startedAt": "2026-01-05T08:00:00.000Z",
+      "finishedAt": "2026-02-10T12:30:00.000Z",
+      "createdAt": "2026-01-05T08:00:00.000Z",
+      "updatedAt": "2026-02-10T12:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "活着",
+      "author": "余华",
+      "category": "finished",
+      "totalPages": 191,
+      "currentPage": 191,
+      "cover": "🌾",
+      "description": "人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。",
+      "startedAt": "2026-02-15T09:00:00.000Z",
+      "finishedAt": "2026-03-02T21:00:00.000Z",
+      "createdAt": "2026-02-15T09:00:00.000Z",
+      "updatedAt": "2026-03-02T21:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "小王子",
+      "author": "安托万·德·圣埃克苏佩里",
+      "category": "finished",
+      "totalPages": 96,
+      "currentPage": 96,
+      "cover": "🦊",
+      "description": "献给曾经是孩子的大人：真正重要的东西，用眼睛是看不见的。",
+      "startedAt": "2026-04-10T10:00:00.000Z",
+      "finishedAt": "2026-04-18T20:00:00.000Z",
+      "createdAt": "2026-04-10T10:00:00.000Z",
+      "updatedAt": "2026-04-18T20:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "围城",
+      "author": "钱锺书",
+      "category": "finished",
+      "totalPages": 359,
+      "currentPage": 359,
+      "cover": "🏰",
+      "description": "婚姻是一座围城，城外的人想冲进去，城里的人想逃出来。",
+      "startedAt": "2026-05-20T08:30:00.000Z",
+      "finishedAt": "2026-06-30T22:00:00.000Z",
+      "createdAt": "2026-05-20T08:30:00.000Z",
+      "updatedAt": "2026-06-30T22:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "月亮与六便士",
+      "author": "毛姆",
+      "category": "finished",
+      "totalPages": 308,
+      "currentPage": 308,
+      "cover": "🌙",
+      "description": "满地都是六便士，他却抬头看见了月亮。",
+      "startedAt": "2026-08-25T19:00:00.000Z",
+      "finishedAt": "2026-09-12T23:00:00.000Z",
+      "createdAt": "2026-08-25T19:00:00.000Z",
+      "updatedAt": "2026-09-12T23:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "百年孤独",
+      "author": "加西亚·马尔克斯",
+      "category": "reading",
+      "totalPages": 360,
+      "currentPage": 145,
+      "cover": "🌴",
+      "description": "魔幻现实主义代表作，布恩迪亚家族七代人的传奇故事。",
+      "startedAt": "2026-09-15T08:00:00.000Z",
+      "finishedAt": null,
+      "createdAt": "2026-09-15T08:00:00.000Z",
+      "updatedAt": "2026-10-20T21:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "title": "人类简史",
+      "author": "尤瓦尔·赫拉利",
+      "category": "reading",
+      "totalPages": 440,
+      "currentPage": 210,
+      "cover": "🦣",
+      "description": "从认知革命、农业革命到科学革命，重新讲述人类的大历史。",
+      "startedAt": "2026-08-01T09:00:00.000Z",
+      "finishedAt": null,
+      "createdAt": "2026-08-01T09:00:00.000Z",
+      "updatedAt": "2026-10-18T20:30:00.000Z"
+    },
+    {
+      "id": 8,
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "category": "reading",
+      "totalPages": 980,
+      "currentPage": 320,
+      "cover": "🏮",
+      "description": "满纸荒唐言，一把辛酸泪。中国古典小说的巅峰之作。",
+      "startedAt": "2026-07-10T10:00:00.000Z",
+      "finishedAt": null,
+      "createdAt": "2026-07-10T10:00:00.000Z",
+      "updatedAt": "2026-10-15T21:30:00.000Z"
+    },
+    {
+      "id": 9,
+      "title": "追风筝的人",
+      "author": "卡勒德·胡赛尼",
+      "category": "reading",
+      "totalPages": 362,
+      "currentPage": 88,
+      "cover": "🪁",
+      "description": "为你，千千万万遍。一个关于背叛与救赎的故事。",
+      "startedAt": "2026-10-05T19:30:00.000Z",
+      "finishedAt": null,
+      "createdAt": "2026-10-05T19:30:00.000Z",
+      "updatedAt": "2026-10-22T20:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "title": "穷查理宝典",
+      "author": "查理·芒格",
+      "category": "wishlist",
+      "totalPages": 528,
+      "currentPage": 0,
+      "cover": "💡",
+      "description": "查理·芒格的智慧箴言与多元思维模型。",
+      "startedAt": null,
+      "finishedAt": null,
+      "createdAt": "2026-09-20T10:00:00.000Z",
+      "updatedAt": "2026-09-20T10:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "title": "深度工作",
+      "author": "卡尔·纽波特",
+      "category": "wishlist",
+      "totalPages": 304,
+      "currentPage": 0,
+      "cover": "🎯",
+      "description": "如何在浮浅的时代进行深度思考与高质量产出。",
+      "startedAt": null,
+      "finishedAt": null,
+      "createdAt": "2026-10-01T09:30:00.000Z",
+      "updatedAt": "2026-10-01T09:30:00.000Z"
+    },
+    {
+      "id": 12,
+      "title": "思考，快与慢",
+      "author": "丹尼尔·卡尼曼",
+      "category": "wishlist",
+      "totalPages": 424,
+      "currentPage": 0,
+      "cover": "🧠",
+      "description": "系统1与系统2：认识思维中的快与慢、直觉与偏见。",
+      "startedAt": null,
+      "finishedAt": null,
+      "createdAt": "2026-10-12T14:00:00.000Z",
+      "updatedAt": "2026-10-12T14:00:00.000Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "bookId": 1,
+      "content": "「宇宙就是一座黑暗森林，每个文明都是带枪的猎人。」黑暗森林法则把猜疑链推到了宇宙尺度，读到这里后背发凉。",
+      "page": 210,
+      "createdAt": "2026-01-28T21:10:00.000Z",
+      "updatedAt": "2026-01-28T21:10:00.000Z"
+    },
+    {
+      "id": 2,
+      "bookId": 2,
+      "content": "福贵身边的人一个个离去，可他还在平静地讲自己的故事。活着本身就是意义。",
+      "page": 120,
+      "createdAt": "2026-02-25T20:05:00.000Z",
+      "updatedAt": "2026-02-25T20:05:00.000Z"
+    },
+    {
+      "id": 3,
+      "bookId": 8,
+      "content": "黛玉进贾府一节，处处是「步步留心，时时在意」，借她的眼睛把贾府的格局与人物关系写得清清楚楚。",
+      "page": 68,
+      "createdAt": "2026-07-18T20:20:00.000Z",
+      "updatedAt": "2026-07-18T20:20:00.000Z"
+    },
+    {
+      "id": 4,
+      "bookId": 7,
+      "content": "认知革命的核心是「讲虚构的故事」：国家、货币、公司都是想象的共同体，靠共同信念实现大规模协作。",
+      "page": 105,
+      "createdAt": "2026-08-15T21:55:00.000Z",
+      "updatedAt": "2026-08-15T21:55:00.000Z"
+    },
+    {
+      "id": 5,
+      "bookId": 5,
+      "content": "满地都是六便士，他却抬头看见了月亮。理想与现实的取舍，斯特里克兰德选了最决绝的那条路。",
+      "page": 156,
+      "createdAt": "2026-09-08T22:40:00.000Z",
+      "updatedAt": "2026-09-08T22:40:00.000Z"
+    },
+    {
+      "id": 6,
+      "bookId": 6,
+      "content": "多年以后，面对行刑队，奥雷里亚诺·布恩迪亚上校将会回想起父亲带他去见识冰块的那个遥远的下午。——时间循环式的开篇太经典了。",
+      "page": 1,
+      "createdAt": "2026-09-16T19:30:00.000Z",
+      "updatedAt": "2026-09-16T19:30:00.000Z"
+    }
+  ]
+}
